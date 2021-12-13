@@ -17,6 +17,11 @@ public class STKBase: Node, MIDITriggerable  {
         avAudioNode = instantiate(instrument: code)
     }
 }
+/// STK Brass
+public class Brass: STKBase {
+    /// Initalize the physical model
+    public init() { super.init("bras")}
+}
 
 /// STK Clarinet
 public class Clarinet: STKBase {
